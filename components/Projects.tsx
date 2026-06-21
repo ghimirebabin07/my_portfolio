@@ -34,7 +34,7 @@ const projects: Project[] = [
     subtitle: "Built with Next.js and modern UI design principles.",
     tech: "Next.js • Tailwind CSS • Framer Motion",
     year: "2026",
-    link: "#",
+    link: "https://babinghimire.vercel.app/#contact",
   },
 ];
 

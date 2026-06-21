@@ -10,20 +10,22 @@ export default function About() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
       viewport={{ once: true }}
-      className="py-28 px-8 md:px-20 bg-gradient-to-b from-[#0a0a0f] to-[#1a0b2e] text-white"
+      className="py-28 px-8 md:px-20 bg-[#0a0a0f] text-white"
     >
-      <h2 className="text-3xl font-bold mb-6 text-orange-400">
+      <h2 className="text-3xl font-bold mb-6 text-purple-400">
         About Me
       </h2>
 
       <p className="max-w-3xl text-zinc-300 leading-relaxed text-lg">
-        Welcome to my digital portfolio — a showcase of my learning journey,
-        projects, and technical interests. I am currently pursuing a Bachelor
-        of Engineering in Information Technology (BEIT) and enjoy exploring
-        various areas of technology, including software development,
-        artificial intelligence, data science, cybersecurity, and backend
-        systems. I am passionate about continuous learning, problem-solving,
-        and building solutions that can make a real-world impact.
+        I am a Bachelor of Engineering in Information Technology (BEIT) student
+        with a background in Civil Engineering. I have worked with core engineering
+        concepts such as surveying, quantity estimation, project management, and
+        construction planning, which strengthened my analytical and problem-solving skills.
+        <br /><br />
+        Currently, I am transitioning into the field of technology with a strong
+        interest in software engineering. My journey is driven by curiosity and
+        continuous learning, aiming to bridge engineering principles with modern
+        technologies to build practical and impactful solutions.
       </p>
     </motion.section>
   );

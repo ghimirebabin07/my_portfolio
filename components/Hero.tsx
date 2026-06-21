@@ -11,44 +11,61 @@ export default function Hero() {
     >
       {/* Left side */}
       <motion.div
-        className="flex flex-col gap-6 text-center md:text-left"
+        className="flex flex-col gap-6 text-center md:text-left max-w-2xl"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        <h2 className="text-lg font-light">Hello, I'm</h2>
+        {/* HELLO I AM */}
+        <h2 className="text-sm tracking-[0.3em] uppercase text-zinc-400 font-light">
+          Hello, I am
+        </h2>
 
-        <h1 className="text-5xl font-extrabold text-white">
-          Babin Ghimire
+        {/* NAME */}
+        <h1 className="text-5xl md:text-7xl font-extrabold bg-gradient-to-r from-purple-400 via-pink-500 to-cyan-400 bg-clip-text text-transparent">
+          BABIN GHIMIRE
         </h1>
 
-        <p className="text-zinc-400 text-lg">
-          Aspiring Software Engineer <br />
-          • Web Developer <br />
-          • AI & Backend Explorer
+        {/* ROLE */}
+        <p className="text-lg md:text-xl font-semibold tracking-wide text-zinc-200">
+          Aspiring Software Developer
         </p>
 
-        <p className="text-zinc-500 text-sm max-w-md">
-          I am currently pursuing a Bachelor of Engineering in Information
-          Technology (BEIT) and am passionate about software development,
-          technology, and innovation. I enjoy transforming ideas into practical
-          solutions through programming and continuous learning. My goal is to
-          build impactful technologies while developing strong technical and
-          professional skills.
+        {/* INTERESTS */}
+        <p className="text-base md:text-lg text-zinc-400 leading-relaxed">
+          AI/ML & Data Science Enthusiast <br />
+          Cybersecurity Explorer
         </p>
 
-        <a
-          href="/resume.pdf"
-          download
-          className="mt-4 inline-block px-6 py-3 rounded-full bg-gradient-to-r from-purple-600 to-pink-500 hover:opacity-90 transition"
-        >
-          Download CV
-        </a>
+        {/* NEW DESCRIPTION (added as requested) */}
+        <p className="text-zinc-400 text-base leading-7 max-w-xl">
+          Passionate about building intelligent systems using Artificial Intelligence,
+          Machine Learning, and Data Science while exploring Cybersecurity to understand
+          secure and scalable digital systems.
+        </p>
+
+        {/* BUTTONS */}
+        <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+          <a
+            href="/resume.pdf"
+            download
+            className="px-6 py-3 rounded-full bg-gradient-to-r from-purple-600 to-pink-500 hover:scale-105 transition duration-300 shadow-lg shadow-purple-500/30"
+          >
+            Download CV
+          </a>
+
+          <a
+            href="#contact"
+            className="px-6 py-3 rounded-full border border-purple-500 text-purple-300 hover:bg-purple-500 hover:text-white transition duration-300"
+          >
+            Contact Me
+          </a>
+        </div>
       </motion.div>
 
       {/* Right side */}
       <motion.div
-        className="relative w-64 h-64 mb-10 md:mb-0"
+        className="relative w-64 h-64 md:w-80 md:h-80 mb-10 md:mb-0"
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8 }}
@@ -57,9 +74,10 @@ export default function Hero() {
 
         <Image
           src="/profile.jpg.jpg"
-          alt="Profile Image"
+          alt="Babin Ghimire"
           fill
-          className="rounded-full border-4 border-purple-500 shadow-lg shadow-purple-500/50 object-cover"
+          priority
+          className="rounded-full border-4 border-purple-500 shadow-2xl shadow-purple-500/50 object-cover"
         />
       </motion.div>
     </section>

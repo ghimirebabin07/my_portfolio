@@ -47,7 +47,7 @@ function ProjectCard({
   year,
 }: Project) {
   return (
-    <div className="group rounded-xl bg-white/5 border border-white/10 p-6 hover:border-purple-500/50 transition-all duration-300 hover:-translate-y-1">
+    <div className="group rounded-lg bg-white/5 border border-white/10 p-6 transition-colors duration-200 hover:border-purple-500/50 motion-safe:md:hover:-translate-y-1">
       {/* Header */}
       <div className="flex items-center justify-between">
         <h3 className="text-lg md:text-xl font-semibold text-white group-hover:text-purple-300 transition">
@@ -91,7 +91,7 @@ function ProjectCard({
           href={link}
           className="mt-5 inline-block text-sm text-purple-400 hover:text-purple-300 transition"
         >
-          View Project →
+          View Project
         </a>
       )}
     </div>

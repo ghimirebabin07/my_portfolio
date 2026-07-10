@@ -1,20 +1,10 @@
 import type { Metadata } from "next";
-import { Outfit, Space_Grotesk, Geist_Mono } from "next/font/google";
+import { Outfit } from "next/font/google";
 import "./globals.css";
 
 const outfit = Outfit({
   subsets: ["latin"],
   variable: "--font-body",
-});
-
-const spaceGrotesk = Space_Grotesk({
-  subsets: ["latin"],
-  variable: "--font-heading",
-});
-
-const geistMono = Geist_Mono({
-  subsets: ["latin"],
-  variable: "--font-mono",
 });
 
 export const metadata: Metadata = {
@@ -30,7 +20,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${outfit.variable} ${spaceGrotesk.variable} ${geistMono.variable} h-full antialiased scroll-smooth`}
+      className={`${outfit.variable} h-full antialiased scroll-smooth`}
     >
       <body className="min-h-full flex flex-col">
         {children}

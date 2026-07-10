@@ -1,5 +1,3 @@
-"use client";
-
 import {
   FaJava,
   FaPython,
@@ -51,26 +49,25 @@ export default function Skills() {
       title: "Tools & Version Control",
       skills: [
         { name: "Git", icon: <FaGitAlt size={26} /> },
-        { name: "GitHub", icon: <FaGithub size={26} /> }, // ✅ FIXED
+        { name: "GitHub", icon: <FaGithub size={26} /> },
       ],
     },
     {
       title: "Core Computer Science",
       skills: [
-        { name: "OOP", icon: "🧩" },
-        { name: "DSA", icon: "📊" },
+        { name: "OOP", icon: "OOP" },
+        { name: "DSA", icon: "DSA" },
       ],
     },
 
-    // 🔥 Civil Engineering Section
     {
       title: "Civil Engineering Skills",
       skills: [
-        { name: "Surveying", icon: "📐" },
-        { name: "Quantity Estimation", icon: "📏" },
-        { name: "Project Management", icon: "📊" },
-        { name: "AutoCAD Basics", icon: "🏗️" },
-        { name: "Construction Planning", icon: "🏢" },
+        { name: "Surveying", icon: "SUR" },
+        { name: "Quantity Estimation", icon: "EST" },
+        { name: "Project Management", icon: "PM" },
+        { name: "AutoCAD Basics", icon: "CAD" },
+        { name: "Construction Planning", icon: "PLAN" },
       ],
     },
   ];
@@ -96,9 +93,11 @@ export default function Skills() {
               {category.skills.map((skill) => (
                 <div
                   key={skill.name}
-                  className="flex flex-col items-center justify-center gap-3 rounded-xl bg-white/5 border border-white/10 p-5 sm:p-6 shadow-md hover:scale-105 hover:shadow-purple-500/20 transition duration-300 min-h-28"
+                  className="flex flex-col items-center justify-center gap-3 rounded-lg bg-white/5 border border-white/10 p-5 sm:p-6 shadow-sm transition-colors duration-200 min-h-28 motion-safe:hover:-translate-y-1 motion-safe:hover:border-purple-400/50 motion-safe:hover:shadow-purple-500/20"
                 >
-                  <div className="text-3xl">{skill.icon}</div>
+                  <div className="flex h-8 min-w-8 items-center justify-center text-xl font-semibold text-purple-200">
+                    {skill.icon}
+                  </div>
                   <span className="text-sm font-medium text-zinc-200 text-center tracking-wide">
                     {skill.name}
                   </span>

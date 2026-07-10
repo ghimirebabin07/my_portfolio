@@ -11,17 +11,17 @@ export default function Contact() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
       viewport={{ once: true }}
-      className="py-20 px-8 md:px-20 bg-gradient-to-b from-[#0a0a0f] to-[#1a0b2e] text-white text-center"
+      className="py-20 px-4 sm:px-6 md:px-20 bg-gradient-to-b from-[#0a0a0f] to-[#1a0b2e] text-white text-center scroll-mt-20"
     >
-      <h2 className="text-3xl font-bold mb-6 text-purple-400">
+      <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-purple-400">
         Let's Connect 🤝
       </h2>
 
-      <p className="text-zinc-300 mb-10">
+      <p className="max-w-2xl mx-auto text-zinc-300 mb-10 text-sm sm:text-base leading-relaxed">
         Feel free to reach out for collaborations, projects, internships, or just to say hi!
       </p>
 
-      <div className="flex justify-center gap-8 text-3xl">
+      <div className="flex flex-wrap justify-center gap-6 sm:gap-8 text-3xl">
         <motion.a
           href="https://github.com/ghimirebabin07"
           target="_blank"

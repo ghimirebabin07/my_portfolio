@@ -10,13 +10,13 @@ export default function About() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
       viewport={{ once: true }}
-      className="py-28 px-8 md:px-20 bg-[#0a0a0f] text-white"
+      className="py-20 md:py-28 px-4 sm:px-6 md:px-20 bg-[#0a0a0f] text-white scroll-mt-20"
     >
-      <h2 className="text-3xl font-bold mb-6 text-purple-400">
+      <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-purple-400">
         About Me
       </h2>
 
-      <p className="max-w-3xl text-zinc-300 leading-relaxed text-lg">
+      <p className="max-w-3xl text-zinc-300 leading-relaxed text-base sm:text-lg">
         I am a Bachelor of Engineering in Information Technology (BEIT) student
         with a background in Civil Engineering. I have worked with core engineering
         concepts such as surveying, quantity estimation, project management, and

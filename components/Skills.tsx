@@ -78,25 +78,25 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className="py-24 px-8 md:px-20 bg-gradient-to-b from-[#0a0a0f] to-[#1a0b2e] text-white"
+      className="py-20 md:py-24 px-4 sm:px-6 md:px-20 bg-gradient-to-b from-[#0a0a0f] to-[#1a0b2e] text-white scroll-mt-20"
     >
       {/* Title */}
-      <h2 className="text-4xl font-semibold mb-14 text-center tracking-wide text-white">
+      <h2 className="text-3xl sm:text-4xl font-semibold mb-12 text-center tracking-wide text-white">
         Skills & Expertise
       </h2>
 
-      <div className="space-y-14">
+      <div className="space-y-12">
         {skillCategories.map((category) => (
           <div key={category.title}>
-            <h3 className="text-lg md:text-xl font-medium text-purple-300 mb-6 border-l-4 border-pink-500 pl-4 tracking-wide">
+            <h3 className="text-base sm:text-lg md:text-xl font-medium text-purple-300 mb-5 border-l-4 border-pink-500 pl-4 tracking-wide">
               {category.title}
             </h3>
 
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+            <div className="grid grid-cols-1 min-[420px]:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 sm:gap-6">
               {category.skills.map((skill) => (
                 <div
                   key={skill.name}
-                  className="flex flex-col items-center justify-center gap-3 rounded-xl bg-white/5 border border-white/10 p-6 shadow-md hover:scale-105 hover:shadow-purple-500/20 transition duration-300"
+                  className="flex flex-col items-center justify-center gap-3 rounded-xl bg-white/5 border border-white/10 p-5 sm:p-6 shadow-md hover:scale-105 hover:shadow-purple-500/20 transition duration-300 min-h-28"
                 >
                   <div className="text-3xl">{skill.icon}</div>
                   <span className="text-sm font-medium text-zinc-200 text-center tracking-wide">

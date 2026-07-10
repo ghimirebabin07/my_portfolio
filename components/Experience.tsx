@@ -25,14 +25,14 @@ const experiences: ExperienceItem[] = [
 
 function ExperienceCard({ title, subtitle, year }: ExperienceItem) {
   return (
-    <div className="relative pl-8 border-l border-purple-500/40">
+    <div className="relative pl-7 sm:pl-8 border-l border-purple-500/40">
       <div className="absolute w-3 h-3 bg-purple-500 rounded-full -left-[7px] top-2"></div>
 
       <h3 className="text-lg md:text-xl font-semibold text-white tracking-wide">
         {title}
       </h3>
 
-      <p className="text-zinc-400 mt-1 leading-relaxed">
+      <p className="text-zinc-400 mt-1 leading-relaxed text-sm sm:text-base">
         {subtitle}
       </p>
 
@@ -47,13 +47,13 @@ export default function Experience() {
   return (
     <section
       id="experience"
-      className="py-24 px-8 md:px-20 bg-[#0a0a0f] text-white"
+      className="py-20 md:py-24 px-4 sm:px-6 md:px-20 bg-[#0a0a0f] text-white scroll-mt-20"
     >
-      <h2 className="text-3xl md:text-4xl font-semibold mb-12 text-white">
+      <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-10 text-white">
         Experience
       </h2>
 
-      <div className="flex flex-col gap-10">
+      <div className="flex flex-col gap-8 sm:gap-10">
         {experiences.map((exp) => (
           <ExperienceCard key={exp.title} {...exp} />
         ))}

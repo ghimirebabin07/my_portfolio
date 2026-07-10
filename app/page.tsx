@@ -8,7 +8,7 @@ import Contact from "@/components/Contact";
 
 export default function HomePage() {
   return (
-    <main className="flex flex-col min-h-screen bg-black text-white">
+    <main className="flex flex-col min-h-screen bg-black text-white overflow-x-hidden">
       <Navbar />
       <Hero />
       <About />

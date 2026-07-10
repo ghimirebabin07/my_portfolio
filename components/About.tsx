@@ -1,15 +1,7 @@
-"use client";
-
-import { motion } from "framer-motion";
-
 export default function About() {
   return (
-    <motion.section
+    <section
       id="about"
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8 }}
-      viewport={{ once: true }}
       className="py-20 md:py-28 px-4 sm:px-6 md:px-20 bg-[#0a0a0f] text-white scroll-mt-20"
     >
       <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-purple-400">
@@ -27,6 +19,6 @@ export default function About() {
         continuous learning, aiming to bridge engineering principles with modern
         technologies to build practical and impactful solutions.
       </p>
-    </motion.section>
+    </section>
   );
 }

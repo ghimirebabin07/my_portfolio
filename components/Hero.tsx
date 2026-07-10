@@ -1,7 +1,4 @@
-"use client";
-
 import Image from "next/image";
-import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
@@ -10,12 +7,7 @@ export default function Hero() {
       className="flex flex-col-reverse md:flex-row items-center justify-between gap-12 md:gap-16 min-h-[calc(100svh-4rem)] px-4 sm:px-6 md:px-20 py-14 md:py-20 bg-gradient-to-br from-[#0a0a0f] via-[#1a0b2e] to-[#2a0f3f] text-white scroll-mt-20"
     >
       {/* Left side */}
-      <motion.div
-        className="flex flex-col gap-5 text-center md:text-left max-w-2xl w-full"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-      >
+      <div className="flex flex-col gap-5 text-center md:text-left max-w-2xl w-full">
         {/* HELLO I AM */}
         <h2 className="text-sm tracking-[0.3em] uppercase text-zinc-400 font-light">
           Hello, I am
@@ -61,26 +53,22 @@ export default function Hero() {
             Contact Me
           </a>
         </div>
-      </motion.div>
+      </div>
 
       {/* Right side */}
-      <motion.div
-        className="relative w-48 h-48 sm:w-56 sm:h-56 md:w-80 md:h-80 mb-2 md:mb-0 shrink-0"
-        initial={{ opacity: 0, scale: 0.8 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.8 }}
-      >
-        <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-purple-600 to-pink-500 blur-3xl opacity-40"></div>
+      <div className="relative w-44 h-44 sm:w-56 sm:h-56 md:w-80 md:h-80 mb-2 md:mb-0 shrink-0">
+        <div className="absolute inset-4 rounded-full bg-gradient-to-tr from-purple-600 to-pink-500 blur-2xl opacity-30 md:inset-0 md:blur-3xl md:opacity-40"></div>
 
         <Image
           src="/profile.jpg.jpg"
           alt="Babin Ghimire"
           fill
           priority
-          sizes="(max-width: 640px) 12rem, (max-width: 768px) 14rem, 20rem"
+          quality={72}
+          sizes="(max-width: 640px) 11rem, (max-width: 768px) 14rem, 20rem"
           className="rounded-full border-4 border-purple-500 shadow-2xl shadow-purple-500/50 object-cover"
         />
-      </motion.div>
+      </div>
     </section>
   );
 }

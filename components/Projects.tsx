@@ -19,13 +19,15 @@ const projects: Project[] = [
     link: "#",
   },
   {
-    title: "Online Voting System",
+    title: "Loan / EMI Management System",
     description:
-      "Secure digital voting platform ensuring transparency, authentication, and vote integrity.",
-    subtitle: "Built using Spring Boot with secure backend architecture.",
-    tech: "Spring Boot • PostgreSQL • REST APIs",
+      "A backend-driven banking system that digitizes customer, loan, EMI schedule, and payment management with automated business logic and REST APIs.",
+    subtitle:
+      "Designed and developed a FastAPI backend with SQLite, automated EMI generation, payment tracking, live outstanding balance calculation, and dashboard reporting.",
+    tech:
+      "FastAPI • SQLite • Pydantic • REST API • Uvicorn • HTML • CSS • JavaScript",
     year: "2026",
-    link: "#",
+    link: "https://loan-emi-system-1.onrender.com/index.html",
   },
   {
     title: "Portfolio Website",
@@ -62,9 +64,7 @@ function ProjectCard({
       </div>
 
       {/* Description */}
-      <p className="text-zinc-300 mt-3 leading-relaxed">
-        {description}
-      </p>
+      <p className="text-zinc-300 mt-3 leading-relaxed">{description}</p>
 
       {/* Subtitle */}
       {subtitle && (
@@ -73,7 +73,7 @@ function ProjectCard({
         </p>
       )}
 
-      {/* Tech stack */}
+      {/* Tech Stack */}
       <div className="mt-4 flex flex-wrap gap-2">
         {tech.split("•").map((item, idx) => (
           <span
@@ -85,13 +85,15 @@ function ProjectCard({
         ))}
       </div>
 
-      {/* Link */}
+      {/* Project Link */}
       {link && (
         <a
           href={link}
+          target="_blank"
+          rel="noopener noreferrer"
           className="mt-5 inline-block text-sm text-purple-400 hover:text-purple-300 transition"
         >
-          View Project
+          View Project →
         </a>
       )}
     </div>

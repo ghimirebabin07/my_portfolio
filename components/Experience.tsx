@@ -7,13 +7,15 @@ type ExperienceItem = {
 const experiences: ExperienceItem[] = [
   {
     title: "National AI Hackathon 2026",
-    subtitle: "LifeLink Project – Team Leader (AI-based Disaster Management System)",
+    subtitle:
+      "LifeLink Project – Team Leader (AI-based Disaster Management System)",
     year: "2026",
   },
   {
-    title: "Frontend Developer",
-    subtitle: "Online Voting System (Java + Web Project)",
-    year: "2026 - Present",
+    title: "Backend Developer",
+    subtitle:
+      "Loan / EMI Management System – Developed a backend-driven banking application using FastAPI,SQLite, and REST APIs with automated EMI schedule generation, payment tracking, and live dashboard reporting.",
+    year: "2026",
   },
   {
     title: "Civil Sub Engineer",

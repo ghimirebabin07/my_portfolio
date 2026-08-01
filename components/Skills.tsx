@@ -9,7 +9,7 @@ import {
 } from "react-icons/fa";
 
 import {
-  SiFlask,
+  SiPython,
   SiPostgresql,
   SiCplusplus,
 } from "react-icons/si";
@@ -36,7 +36,7 @@ export default function Skills() {
     {
       title: "Backend Development",
       skills: [
-        { name: "Flask", icon: <SiFlask size={26} /> },
+        { name: "FastAPI", icon: <SiPython size={26} /> },
       ],
     },
     {

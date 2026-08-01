@@ -1,15 +1,25 @@
 import type { Metadata } from "next";
-import { Outfit } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 
-const outfit = Outfit({
+const poppins = Poppins({
   subsets: ["latin"],
   variable: "--font-body",
+  display: "swap",
+  weight: [
+    "300",
+    "400",
+    "500",
+    "600",
+    "700",
+    "800",
+  ],
 });
 
 export const metadata: Metadata = {
   title: "Babin Ghimire",
-  description: "Software Engineer | AI/ML Enthusiast | Data Science Explorer",
+  description:
+    "BEIT Student | Backend Developer | FastAPI Enthusiast | National AI Hackathon 2026 Team Leader",
 };
 
 export default function RootLayout({
@@ -20,9 +30,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${outfit.variable} h-full antialiased scroll-smooth`}
+      className={`${poppins.variable} h-full antialiased scroll-smooth`}
     >
-      <body className="min-h-full flex flex-col">
+      <body className={`${poppins.className} min-h-full flex flex-col`}>
         {children}
       </body>
     </html>

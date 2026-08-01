@@ -28,14 +28,11 @@ export default function Hero() {
           • Python <br />• Backend Development
         </p>
 
-        {/* Description */}
         <p className="text-zinc-400 text-sm sm:text-base leading-7 max-w-xl mx-auto md:mx-0">
-          I'm a Bachelor of Engineering in Information Technology (BEIT) student
-          passionate about backend development with Python and FastAPI. I enjoy
-          designing REST APIs, working with databases, and building practical
-          software solutions through real-world projects and hackathons. I'm
-          continuously learning new technologies and improving my software
-          engineering skills every day.
+          Passionate about learning by building, I'm currently developing
+          backend applications with Python and FastAPI while exploring modern
+          software engineering practices. I'm looking for opportunities to grow,
+          contribute, and gain real-world development experience.
         </p>
 
         {/* Achievement */}

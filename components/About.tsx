@@ -9,15 +9,22 @@ export default function About() {
       </h2>
 
       <p className="max-w-3xl text-zinc-300 leading-relaxed text-base sm:text-lg">
-        I am a Bachelor of Engineering in Information Technology (BEIT) student
-        with a background in Civil Engineering. I have worked with core engineering
-        concepts such as surveying, quantity estimation, project management, and
-        construction planning, which strengthened my analytical and problem-solving skills.
+        I'm a Bachelor of Engineering in Information Technology (BEIT) student
+        passionate about backend development, AI, and building real-world software
+        solutions. I enjoy turning ideas into practical applications using modern
+        technologies such as FastAPI, Spring Boot, PostgreSQL, SQLAlchemy, and
+        Next.js.
         <br /><br />
-        Currently, I am transitioning into the field of technology with a strong
-        interest in software engineering. My journey is driven by curiosity and
-        continuous learning, aiming to bridge engineering principles with modern
-        technologies to build practical and impactful solutions.
+        I have led projects including an AI-powered LifeLink system at
+        the National AI Hackathon 2026 and developed a Loan & EMI Management
+        System that automates loan processing, payment tracking, and dashboard
+        reporting through REST APIs.
+        <br /><br />
+        Before transitioning into software engineering, I completed a diploma in
+        Civil Engineering, where I developed strong analytical, project planning,
+        and problem-solving skills. Today, I combine that engineering mindset
+        with software development to create scalable and impactful solutions while
+        continuously learning new technologies.
       </p>
     </section>
   );

@@ -9,6 +9,16 @@ type Project = {
 
 const projects: Project[] = [
   {
+    title: "GasQ – LPG Gas Digital Queue Management System",
+    description:
+      "A complete queue management system for LPG gas dealers with customer registration, digital token system, real-time queue tracking, and dealer dashboard.",
+    subtitle:
+      "Built a full-stack application with JWT authentication, role-based access (customer/dealer/admin), automated queue management, stock tracking, and audit logging.",
+    tech: "FastAPI • SQLite • JWT • HTML • CSS • JavaScript • Uvicorn • Pydantic",
+    year: "2026",
+    link: "https://gasq.onrender.com/",
+  },
+  {
     title: "LifeLink – National AI Hackathon Project",
     description:
       "AI-powered disaster management system designed for emergency response, mapping, and crisis coordination.",

@@ -73,7 +73,7 @@ export default function Hero() {
         <div className="absolute inset-4 rounded-full bg-purple-600/25 blur-xl md:inset-0 md:bg-gradient-to-tr md:from-purple-600 md:to-pink-500 md:blur-3xl md:opacity-40"></div>
 
         <Image
-          src="/profile.jpg.jpg"
+          src="/profile.jpg"
           alt="Babin Ghimire"
           fill
           priority

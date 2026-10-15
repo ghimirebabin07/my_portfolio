@@ -7,6 +7,9 @@ const nextConfig: NextConfig = {
   experimental: {
     optimizePackageImports: ["react-icons"],
   },
+  output: "export",
 };
 
 export default nextConfig;
+
+import('@opennextjs/cloudflare').then(m => m.initOpenNextCloudflareForDev());

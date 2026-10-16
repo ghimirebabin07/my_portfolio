@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { HiMenu, HiX } from "react-icons/hi";
 
@@ -24,8 +25,14 @@ export default function Navbar() {
           href="#home"
           className="flex items-center gap-3 hover:opacity-90 transition"
         >
-          <div className="w-10 h-10 rounded-full bg-gradient-to-r from-purple-600 to-pink-500 flex items-center justify-center font-bold text-white">
-            BG
+          <div className="relative w-10 h-10 rounded-full overflow-hidden border-2 border-purple-500">
+            <Image
+              src="/profile.jpg"
+              alt="Babin Ghimire"
+              fill
+              sizes="2.5rem"
+              className="object-cover"
+            />
           </div>
 
           <span className="hidden sm:block text-lg font-bold tracking-wide">

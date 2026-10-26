@@ -4,6 +4,7 @@ import { useState, type FormEvent } from "react";
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import { FiSend, FiCheck, FiAlertCircle } from "react-icons/fi";
+import { WEB3FORMS_ACCESS_KEY } from "@/lib/config";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -44,7 +45,7 @@ export default function Contact() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          access_key: process.env.NEXT_PUBLIC_WEB3FORMS_KEY,
+          access_key: WEB3FORMS_ACCESS_KEY,
           name: formData.name,
           email: formData.email,
           subject: formData.subject,

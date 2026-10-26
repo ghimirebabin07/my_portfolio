@@ -4,13 +4,13 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
-  --card: #f5f5f5;
-  --card-border: #e5e5e5;
-  --muted: #737373;
-  --accent: #7c3aed;
-  --accent-light: #a78bfa;
-  --section-alt: #fafafa;
+  --foreground: #111111;
+  --card: #f8f8fa;
+  --card-border: #d4d4d8;
+  --muted: #52525b;
+  --accent: #6d28d9;
+  --accent-light: #5b21b6;
+  --section-alt: #f4f4f5;
 }
 
 .dark {

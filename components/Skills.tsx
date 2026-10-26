@@ -9,9 +9,9 @@ import {
   FaGitAlt,
   FaJs,
   FaGithub,
+  FaDatabase,
 } from "react-icons/fa";
 import {
-  SiPython,
   SiPostgresql,
   SiCplusplus,
   SiFastapi,
@@ -20,6 +20,14 @@ import {
   SiNextdotjs,
   SiC,
 } from "react-icons/si";
+import {
+  FiServer,
+  FiLayers,
+  FiShare2,
+  FiCompass,
+  FiBarChart2,
+  FiBriefcase,
+} from "react-icons/fi";
 
 const skillCategories = [
   {
@@ -36,7 +44,7 @@ const skillCategories = [
     title: "Backend Development",
     skills: [
       { name: "FastAPI", icon: <SiFastapi size={26} /> },
-      { name: "REST APIs", icon: <SiPython size={26} /> },
+      { name: "REST APIs", icon: <FiServer size={26} /> },
       { name: "SQLAlchemy", icon: <SiSqlalchemy size={26} /> },
     ],
   },
@@ -66,16 +74,16 @@ const skillCategories = [
   {
     title: "Core Computer Science",
     skills: [
-      { name: "OOP", icon: <SiCplusplus size={26} /> },
-      { name: "DSA", icon: <SiC size={26} /> },
+      { name: "OOP", icon: <FiLayers size={26} /> },
+      { name: "DSA", icon: <FiShare2 size={26} /> },
     ],
   },
   {
     title: "Civil Engineering",
     skills: [
-      { name: "Surveying", icon: <FaHtml5 size={26} /> },
-      { name: "Estimation", icon: <FaCss3Alt size={26} /> },
-      { name: "Project Mgmt", icon: <FaGitAlt size={26} /> },
+      { name: "Surveying", icon: <FiCompass size={26} /> },
+      { name: "Estimation", icon: <FiBarChart2 size={26} /> },
+      { name: "Project Mgmt", icon: <FiBriefcase size={26} /> },
     ],
   },
 ];

@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="flex flex-col-reverse md:flex-row items-center justify-between gap-12 md:gap-16 min-h-[calc(100svh-4rem)] px-4 sm:px-6 md:px-20 py-14 md:py-20 bg-section-alt md:bg-gradient-to-br md:from-section-alt md:via-[#1a0b2e] md:to-[#2a0f3f] text-foreground scroll-mt-20"
+      className="flex flex-col-reverse md:flex-row items-center justify-between gap-12 md:gap-16 min-h-[calc(100svh-4rem)] px-4 sm:px-6 md:px-20 py-14 md:py-20 bg-[#0a0a0f] md:bg-gradient-to-br md:from-[#0a0a0f] md:via-[#1a0b2e] md:to-[#2a0f3f] text-white scroll-mt-20"
     >
       {/* Left Side */}
       <motion.div
@@ -17,7 +17,7 @@ export default function Hero() {
         transition={{ duration: 0.7, ease: "easeOut" }}
       >
         <motion.h2
-          className="text-sm tracking-[0.3em] uppercase text-muted font-light"
+          className="text-sm tracking-[0.3em] uppercase text-white/60 font-light"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2, duration: 0.5 }}
@@ -26,7 +26,7 @@ export default function Hero() {
         </motion.h2>
 
         <motion.h1
-          className="text-4xl sm:text-5xl md:text-7xl font-extrabold leading-tight bg-gradient-to-r from-accent via-pink-500 to-cyan-400 bg-clip-text text-transparent"
+          className="text-4xl sm:text-5xl md:text-7xl font-extrabold leading-tight bg-gradient-to-r from-purple-400 via-pink-500 to-cyan-400 bg-clip-text text-transparent"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 0.6 }}
@@ -35,7 +35,7 @@ export default function Hero() {
         </motion.h1>
 
         <motion.p
-          className="text-lg sm:text-xl md:text-2xl font-semibold text-foreground"
+          className="text-lg sm:text-xl md:text-2xl font-semibold text-white"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.4, duration: 0.5 }}
@@ -44,7 +44,7 @@ export default function Hero() {
         </motion.p>
 
         <motion.p
-          className="text-sm sm:text-base md:text-lg text-accent-light font-medium"
+          className="text-sm sm:text-base md:text-lg text-purple-300 font-medium"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 0.5 }}
@@ -54,7 +54,7 @@ export default function Hero() {
         </motion.p>
 
         <motion.p
-          className="text-muted text-sm sm:text-base leading-7 max-w-xl mx-auto md:mx-0"
+          className="text-white/70 text-sm sm:text-base leading-7 max-w-xl mx-auto md:mx-0"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.6, duration: 0.5 }}
@@ -66,7 +66,7 @@ export default function Hero() {
         </motion.p>
 
         <motion.p
-          className="text-accent-light text-sm font-medium"
+          className="text-purple-300 text-sm font-medium"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.7, duration: 0.5 }}
@@ -83,14 +83,14 @@ export default function Hero() {
           <a
             href="/resume.pdf"
             download
-            className="inline-flex items-center justify-center px-6 py-3 rounded-full bg-gradient-to-r from-accent to-pink-500 hover:opacity-90 transition duration-300 shadow-lg shadow-accent/30 text-white"
+            className="inline-flex items-center justify-center px-6 py-3 rounded-full bg-gradient-to-r from-purple-600 to-pink-500 hover:opacity-90 transition duration-300 shadow-lg shadow-purple-500/30 text-white"
           >
             Download CV
           </a>
 
           <a
             href="#contact"
-            className="inline-flex items-center justify-center px-6 py-3 rounded-full border border-accent text-accent-light hover:bg-accent hover:text-white transition duration-300"
+            className="inline-flex items-center justify-center px-6 py-3 rounded-full border border-purple-500 text-purple-300 hover:bg-purple-600 hover:text-white transition duration-300"
           >
             Contact Me
           </a>
@@ -99,7 +99,7 @@ export default function Hero() {
             href="https://github.com/ghimirebabin07"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center px-6 py-3 rounded-full border border-card-border text-foreground hover:bg-card hover:border-muted transition duration-300"
+            className="inline-flex items-center justify-center px-6 py-3 rounded-full border border-white/30 text-white/80 hover:bg-white/10 hover:border-white/50 transition duration-300"
           >
             GitHub
           </a>
@@ -113,7 +113,7 @@ export default function Hero() {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.7, delay: 0.3, ease: "easeOut" }}
       >
-        <div className="absolute inset-4 rounded-full bg-accent/25 blur-xl md:inset-0 md:bg-gradient-to-tr md:from-accent md:to-pink-500 md:blur-3xl md:opacity-40"></div>
+        <div className="absolute inset-4 rounded-full bg-purple-600/25 blur-xl md:inset-0 md:bg-gradient-to-tr md:from-purple-600 md:to-pink-500 md:blur-3xl md:opacity-40"></div>
 
         <Image
           src="/profile.jpg"
@@ -122,7 +122,7 @@ export default function Hero() {
           priority
           quality={80}
           sizes="(max-width: 640px) 11rem, (max-width: 768px) 14rem, 20rem"
-          className="rounded-full border-4 border-accent object-cover shadow-2xl shadow-accent/40"
+          className="rounded-full border-4 border-purple-500 object-cover shadow-2xl shadow-purple-500/40"
         />
       </motion.div>
     </section>

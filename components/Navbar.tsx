@@ -150,16 +150,6 @@ export default function Navbar() {
                 </li>
               );
             })}
-
-            <li className="mt-3">
-              <a
-                href="/resume.pdf"
-                download
-                className="block rounded-lg bg-accent px-4 py-3 text-center font-medium text-white hover:opacity-90 transition"
-              >
-                Download Resume
-              </a>
-            </li>
           </ul>
         </div>
       )}
